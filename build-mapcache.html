@@ -218,7 +218,7 @@
         <script type="text/javascript">
           var url = 'http://geo.weather.gc.ca/geomet/?lang=E&service=wms&request=GetCapabilities';
           document.getElementById("wmsUrl").value = url;
-          $.getJSON('http://whateverorigin.org/get?url=' +
+          $.getJSON('https://whateverorigin.org/get?url=' +
             encodeURIComponent(url) + '&callback=?',
             function(data) {
                 var mapcache = buildMapcacheXmlFromContent(data.contents, url, 'geometca');
